@@ -15,9 +15,7 @@ const useOnlineStatus = ()=>{
       setOnlineStatus(true);
     }) ;
 
-    
-
-  },[]);
+    },[]);
   return onlineStatus;
   
 };
@@ -204,7 +202,7 @@ if (!listOfRestaurant || listOfRestaurant.length === 0) {
 
 }
 const Header = ()=>{
-  
+
   const onlineStatus= useOnlineStatus();
 
 if (onlineStatus===false)
@@ -254,15 +252,56 @@ const styleCard={
 
 const About = () =>{
   return(
-    <div><h1>About </h1>
-    <div>This is Namaste React</div></div>
+    <div className="about-page">
+      <h1>About Us</h1>
+      <p>
+        Welcome to our Food Ordering App! 🍔🍕
+      </p>
+
+      <p>
+        This app is built using <strong>React.js</strong> and uses the Swiggy public API to display a wide range of restaurants. 
+        You can search for your favorite restaurants, filter top-rated ones, and view detailed menus and information.
+      </p>
+
+      
+        Features:
+        <ul>
+          <li>🔍 Search for restaurants by name</li>
+          <li>⭐ Filter by top-rated restaurants</li>
+          <li>🖼️ View restaurant images and cuisines</li>
+          <li>⏱️ Know the delivery time and rating</li>
+        </ul>
+      
+
+      <p>
+        This project is a learning-based food ordering interface designed to practice React concepts such as components, state, props, hooks, and conditional rendering.
+      </p>
+
+      <p>
+        Thank you for visiting our app! Happy ordering! 😋
+      </p>
+    </div>
   )
 };
 
-const ContactUs = ()=>{
-  return(
-    <div><h1>ContactUs</h1>
- <div>This is Namaste React</div></div>)
+const ContactUs = () => {
+  return (
+    <div className="contact-page">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! If you have any questions, feedback, or just want to connect, feel free to reach out.</p>
+
+      <div className="contact-info">
+        <p>
+          📧 Email: <a href="mailto:ashishmehta425@gmail.com">yourmail@gmail.com</a>
+        </p>
+        <p>
+          💼 LinkedIn: <a href="https://www.linkedin.com/in/ashish-mehta-2a4839264/" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/yourlinkedinid
+          </a>
+        </p>
+      </div>
+    </div>
+  );
 };
 const Error = ()=>{
   return(
