@@ -292,11 +292,11 @@ const ContactUs = () => {
 
       <div className="contact-info">
         <p>
-          📧 Email: <a href="mailto:ashishmehta425@gmail.com">yourmail@gmail.com</a>
+          📧 Email: <a href="mailto:ashishmehta425@gmail.com">ashishmehta425@gmail.com</a>
         </p>
         <p>
           💼 LinkedIn: <a href="https://www.linkedin.com/in/ashish-mehta-2a4839264/" target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/yourlinkedinid
+            linkedin.com/in/AshishMehta
           </a>
         </p>
       </div>
